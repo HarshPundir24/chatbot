@@ -22,7 +22,6 @@ export default async function handler(req, res) {
           'Authorization': `Bearer ${apiKey}`,
           'Content-Type': 'application/json'
         }
-        timeout: 15000
       }
     );
     const responseData = response.data.text || 'No response received';
