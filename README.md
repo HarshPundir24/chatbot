@@ -1,1 +1,1 @@
-Explore this chatbot functionality: chatbot-git-main-harsh-pundirs-projects.vercel.app
+Explore this chatbot functionality: https://chatbot-git-main-harsh-pundirs-projects.vercel.app
