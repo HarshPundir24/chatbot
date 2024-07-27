@@ -1,5 +1,13 @@
 import "@/styles/globals.css";
+import Chatbot from '../components/Chatbot';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function App({ Component, pageProps }) {
+  return (
+    <div>
+      <Chatbot />
+      <Component {...pageProps} />
+    </div>
+  );
 }
+
+export default App;
