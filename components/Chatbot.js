@@ -29,6 +29,7 @@ const Chatbot = () => {
     setResponses(prevResponses => [...prevResponses, { question, response: 'Loading...' }]);
     setError(null);
     setIsSubmitted(true);
+    setValue('');
   
     try {
       const res = await axios.post('/api/chat', { question, consent });
