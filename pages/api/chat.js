@@ -34,8 +34,8 @@ export default async function handler(req, res) {
   };
 
   const isGreeting = (question) => {
-    const greetings = ['hello', 'hi', 'how are you', 'hey', 'good morning', 'good afternoon', 'good evening'];
-    return greetings.some(greeting => question.toLowerCase().includes(greeting));
+    const greetings = ['hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening'];
+    return greetings.some(greeting => question.toLowerCase().startsWith(greeting));
   };
 
   if (isGreeting(question)) {
@@ -67,3 +67,5 @@ export default async function handler(req, res) {
     res.status(error.response?.status || 500).json({ error: error.response?.data || 'An error occurred' });
   }
 }
+
+
