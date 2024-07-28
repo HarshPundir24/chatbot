@@ -51,7 +51,7 @@ export default async function handler(req, res) {
       url,
       {
         prompt: question,
-        max_tokens: 300,
+        max_tokens: 250,
       },
       {
         headers: {
