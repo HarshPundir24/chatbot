@@ -40,7 +40,7 @@ const Chatbot = () => {
         ));
         setResponses(prevResponses => {
           const newResponses = [...prevResponses];
-          newResponses[newResponses.length - 1].response = paragraphs;
+          newResponses [newResponses.length - 1].response = paragraphs;
           return newResponses;
         });
       } else {
